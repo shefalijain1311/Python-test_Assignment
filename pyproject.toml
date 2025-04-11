@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "get-papers"
+version = "0.1.0"
+description = "CLI tool to fetch and filter PubMed papers"
+authors = ["Your Name <your.email@example.com>"]
+readme = "README.md"
+packages = [{ include = "get_papers" }]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+requests = "^2.26.0"
+typer = "^0.7.0"
+lxml = "^4.6.0"
+pandas = "^1.3.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.0"
+mypy = "^0.910"
+black = "^21.9b0"
+isort = "^5.9.3"
+
+[tool.poetry.scripts]
+get-papers-list = "cli:main"
+
